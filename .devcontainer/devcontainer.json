@@ -1,14 +1,17 @@
 {
-	"image": "vvakame/review:5.8",
-	"settings": {
-		"editor.wordWrap": "on"
-	},
-	"extensions": [
-		"yuqquu.review-starter-syntax-highlight"
-	],
-	"postCreateCommand": [
-		"npm",
-		"ci",
-	],
-	"remoteUser": "root"
+  "image": "vvakame/review:5.8",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "editor.wordWrap": "on"
+      },
+      "extensions": [
+        "vvakame.vscode-prh-extention",
+        "atsushieno.language-review"
+      ]
+    }
+  },
+  "onCreateCommand": "bash .devcontainer/onCreateCommand.sh",
+  "postCreateCommand": "bash .devcontainer/postCreateCommand.sh",
+  "remoteUser": "root"
 }

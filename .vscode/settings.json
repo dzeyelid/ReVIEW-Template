@@ -1,0 +1,7 @@
+{
+  "prh.configFiles": [
+    "./prh-rules/media/techbooster.yml"
+  ],
+  "prh.prhlsPath": "/usr/bin/prhls",
+  "prh.enable": true
+}
